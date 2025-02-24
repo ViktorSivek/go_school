@@ -1,0 +1,21 @@
+# Ignore binaries and compiled files
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+
+# Ignore Go build and test artifacts
+bin/
+pkg/
+coverage.out
+
+# Ignore dependency directories
+vendor/
+
+# Ignore VS Code workspace settings
+.vscode/
+
+# Ignore OS system files
+.DS_Store
+Thumbs.db
