@@ -19,3 +19,8 @@ vendor/
 # Ignore OS system files
 .DS_Store
 Thumbs.db
+.aider*
+
+# .venv .env
+.venv
+.env
