@@ -1,9 +1,16 @@
-# Ignore binaries and compiled files
+# MacOS
+.DS_Store
+
+# Binaries and compiled files
 *.exe
+*.exe~
 *.dll
 *.so
 *.dylib
 *.out
+
+# Test binary, built with `go test -c`
+*.test
 
 # Ignore Go build and test artifacts
 bin/
@@ -13,14 +20,29 @@ coverage.out
 # Ignore dependency directories
 vendor/
 
-# Ignore VS Code workspace settings
+# Go modules
+go.work
+go.work.sum
+
+# Environment
+.env
+.env.*
+!.env.template
+!.env.common
+!.env.test
+
+# Ignore VS Code and other IDE workspace settings
 .vscode/
+.idea/
 
 # Ignore OS system files
-.DS_Store
 Thumbs.db
+
+# Debugging
+**/__debug*
+
+# Aider
 .aider*
 
-# .venv .env
+# Virtual environments
 .venv
-.env
